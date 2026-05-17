@@ -1,0 +1,321 @@
+.page { min-height: 100vh; }
+
+.label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 0.75rem;
+}
+
+.h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.5px;
+}
+
+.h2 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--teal), var(--gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Mission */
+.mission {
+  padding: 5rem 2rem;
+  background: var(--cream);
+}
+
+.missionInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.missionText p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+
+.missionStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.mStat { display: flex; flex-direction: column; gap: 4px; }
+
+.mStatN {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.mStatL {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.missionVisual {
+  position: relative;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bigEmoji {
+  font-size: 8rem;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 20px 40px rgba(14,165,181,0.2));
+}
+
+.mCard1, .mCard2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border-radius: 14px;
+  padding: 14px 20px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  font-size: 1.5rem;
+}
+
+.mCard1 { top: 40px; right: 0; animation: float 3.5s ease-in-out infinite; }
+.mCard2 { bottom: 40px; left: 0; animation: float 4s ease-in-out infinite 0.5s; }
+
+.mCard1 div, .mCard2 div {
+  display: flex;
+  flex-direction: column;
+}
+
+.mCard1 strong, .mCard2 strong {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.mCard1 span:last-child, .mCard2 span:last-child {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+/* Values */
+.valuesSection {
+  padding: 5rem 2rem;
+  background: var(--white);
+}
+
+.sectionInner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.sectionHead {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.valueCard {
+  background: var(--cream);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--teal);
+}
+
+.valueIcon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.valueCard h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.6rem;
+}
+
+.valueCard p {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Timeline */
+.timelineSection {
+  padding: 5rem 2rem;
+  background: var(--navy);
+}
+
+.timelineSection .label { color: var(--teal-light); }
+.timelineSection .h2 { color: white; }
+.timelineSection .sectionHead { text-align: center; }
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.tlLine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--teal), var(--gold));
+  transform: translateX(-50%);
+}
+
+.tlItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.tlRight { justify-content: flex-start; padding-left: calc(50% + 2rem); }
+.tlLeft  { justify-content: flex-end;  padding-right: calc(50% + 2rem); }
+
+.tlCard {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  max-width: 340px;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.tlCard:hover {
+  background: rgba(14,165,181,0.12);
+  border-color: rgba(14,165,181,0.3);
+}
+
+.tlYear {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--teal-light);
+  background: rgba(14,165,181,0.15);
+  padding: 3px 10px;
+  border-radius: 50px;
+  margin-bottom: 8px;
+}
+
+.tlCard h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.tlCard p {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+}
+
+.tlDot {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--teal);
+  border: 3px solid var(--navy);
+  box-shadow: 0 0 0 3px rgba(14,165,181,0.4);
+}
+
+/* Team */
+.teamSection {
+  padding: 5rem 2rem;
+  background: var(--cream);
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.teamCard {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.teamCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.teamEmoji {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.teamCard h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.teamRole {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--teal);
+  background: rgba(14,165,181,0.1);
+  padding: 3px 10px;
+  border-radius: 50px;
+  margin-bottom: 0.75rem;
+}
+
+.teamCard p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
