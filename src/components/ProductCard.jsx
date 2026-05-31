@@ -45,8 +45,9 @@ const ProductCard = ({ product, onAdd, isInCart, isFav, onToggleFav }) => {
 
       {/* Image — links to detail page */}
       <Link to={`/product/${product.id}`} className={styles.imgArea}>
-        <span className={styles.emoji}>{product.emoji}</span>
-      </Link>
+        {/* <span className={styles.emoji}>{product.emoji}</span> */}
+        <img src={product.images?.[1]?.src} alt={product.name}  /> 
+      </Link> 
 
       {/* Info */}
       <div className={styles.info}>
