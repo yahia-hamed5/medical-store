@@ -48,7 +48,6 @@ const ProductCard = ({ product, onAdd, isInCart, isFav, onToggleFav }) => {
         {/* <span className={styles.emoji}>{product.emoji}</span> */}
         <img src={product.images?.[0]?.src} alt={product.name} className={styles.img} />          
       </Link> 
-      <p>{product.images?.[0]?.src}</p>
       {/* Info */}
       <div className={styles.info}>
         <div className={styles.rating}>
