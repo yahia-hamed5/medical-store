@@ -52,7 +52,7 @@
 }
 
 .imgArea {
-  height: 160px;
+  height: 300px;
   background: var(--bg, #f0f9ff);
   display: flex;
   align-items: center;
@@ -220,4 +220,11 @@
 
 .heartActive:hover {
   background: #fee2e2;
+}
+
+
+.img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

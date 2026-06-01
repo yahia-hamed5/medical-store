@@ -149,11 +149,11 @@ export const products = [
     images: [
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-1.jpeg",
+        src: "./images/products/hood/hood-5.jpeg",
       },
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-2.jpeg",
+        src: "./images/products/hood/hood-7.jpeg",
       },
     ],
 
@@ -171,18 +171,12 @@ export const products = [
   {
     id: 2,
     name: "فوطة حرارية ميدسانا",
-
     category: "rehabilitation",
-
     price: 2200,
     images: [
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-1.jpeg",
-      },
-      {
-        alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-2.jpeg",
+        src: "./images/products/towel/towel-1.jpeg", 
       },
     ],
 
@@ -207,11 +201,11 @@ export const products = [
     images: [
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-1.jpeg",
+        src: "./images/products/Instead/Instead-2.jpeg",
       },
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-2.jpeg",
+        src: "./images/products/Instead/Instead-1.jpeg",
       },
     ],
 
@@ -236,11 +230,19 @@ export const products = [
     images: [
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-1.jpeg",
+        src: "./images/products/handle/handle-1.jpeg",
       },
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-2.jpeg",
+        src: "./images/products/handle/handle-2.jpeg",
+      },
+            {
+        alt: "جهاز ضغط بيرور",
+        src: "./images/products/handle/handle-3.jpeg",
+      },
+            {
+        alt: "جهاز ضغط بيرور",
+        src: "./images/products/handle/handle-4.jpeg",
       },
     ],
 
@@ -265,11 +267,11 @@ export const products = [
     images: [
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-1.jpeg",
+        src: "./images/products/hood/hood-3.jpeg",
       },
-      {
+            {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-2.jpeg",
+        src: "./images/products/hood/hood-4.jpeg",
       },
     ],
 
@@ -294,11 +296,7 @@ export const products = [
     images: [
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-1.jpeg",
-      },
-      {
-        alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-2.jpeg",
+        src: "./images/products/hood/hood-2.jpeg",
       },
     ],
 
@@ -323,11 +321,7 @@ export const products = [
     images: [
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-1.jpeg",
-      },
-      {
-        alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/beurer-2.jpeg",
+        src: "./images/products/hood/hood-1.jpeg",
       },
     ],
 
@@ -1083,7 +1077,7 @@ export const products = [
     images: [
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/oxygen/bag.jpeg.jpeg",
+        src: "./images/products/oxygen/bag.jpeg",
       },
     ],
 
@@ -1137,15 +1131,15 @@ export const products = [
     images: [
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/bu510-1.jpeg",
+        src: "./images/products/pressure/BU510-3.jpeg",
       },
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/bu510-2.jpeg",
+        src: "./images/products/pressure/BU510-2.jpeg",
       },
             {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/pressure/bu510-3.jpeg",
+        src: "./images/products/pressure/BU510-1.jpeg",
       },
     ],
 

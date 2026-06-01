@@ -23,6 +23,7 @@ const ProductDetailPage = ({ cartItems, addToCart, isFav, onToggleFav }) => {
   const product = products.find(p => p.id === Number(id));
   const [qty, setQty]           = useState(1);
   const [activeTab, setActiveTab] = useState('desc');
+  console.log('ProductDetailPage render', product.images?.[0]?.src );
 
   if (!product) return (
     <div className={styles.notFound}>
@@ -53,7 +54,9 @@ const ProductDetailPage = ({ cartItems, addToCart, isFav, onToggleFav }) => {
       <div className={styles.main}>
         {/* Visual */}
         <div className={styles.visual} style={{ background: product.color }}>
-          <span className={styles.productEmoji}>{product.emoji}</span>
+          <div style={{ width:'100%',height:'100%' }}>
+            <img src={`.${product.images?.[0]?.src}`} alt={product.name} style={{ width:'100%', height:'100%', objectFit:'contain' }} />
+          </div>
           {product.badge && (
             <span className={styles.badge} style={{ background: product.badgeColor }}>
               {product.badge}
@@ -229,7 +232,10 @@ const ProductDetailPage = ({ cartItems, addToCart, isFav, onToggleFav }) => {
                 <Link key={p.id} to={`/product/${p.id}`}
                   className={styles.relatedCard}
                   style={{ '--accent': p.accentColor, '--bg': p.color }}>
-                  <div className={styles.relCardImg}><span>{p.emoji}</span></div>
+                  <div className={styles.relCardImg}>
+                    <img src={`.${p.images?.[0]?.src}`} alt={p.name} style={{ width:'100%', height:'100%', objectFit:'contain' }} />
+                  </div>
+
                   <div className={styles.relCardInfo}>
                     <h4>{p.name}</h4>
                     <span>{p.price.toLocaleString('ar-EG')} ج.م</span>
