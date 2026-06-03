@@ -176,7 +176,7 @@ export const products = [
     images: [
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/towel/towel-1.jpeg", 
+        src: "./images/products/towel/towel-1.jpeg",
       },
     ],
 
@@ -236,11 +236,11 @@ export const products = [
         alt: "جهاز ضغط بيرور",
         src: "./images/products/handle/handle-2.jpeg",
       },
-            {
+      {
         alt: "جهاز ضغط بيرور",
         src: "./images/products/handle/handle-3.jpeg",
       },
-            {
+      {
         alt: "جهاز ضغط بيرور",
         src: "./images/products/handle/handle-4.jpeg",
       },
@@ -269,7 +269,7 @@ export const products = [
         alt: "جهاز ضغط بيرور",
         src: "./images/products/hood/hood-3.jpeg",
       },
-            {
+      {
         alt: "جهاز ضغط بيرور",
         src: "./images/products/hood/hood-4.jpeg",
       },
@@ -952,7 +952,8 @@ export const products = [
     images: [
       {
         alt: "جهاز ضغط بيرور",
-        src: "./images/products/haier/haier-2.jpeg",      },
+        src: "./images/products/haier/haier-2.jpeg",
+      },
     ],
 
     oldPrice: 36000,
@@ -976,7 +977,7 @@ export const products = [
     images: [
       {
         alt: "جهاز ضغط بيرور",
-                src: "./images/products/haier/haier-3.jpeg",
+        src: "./images/products/haier/haier-3.jpeg",
       },
     ],
 
@@ -1003,7 +1004,6 @@ export const products = [
         alt: "جهاز ضغط بيرور",
         src: "./images/products/haier/haier-4.jpeg",
       },
-
     ],
 
     oldPrice: 38000,
@@ -1137,7 +1137,7 @@ export const products = [
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/BU510-2.jpeg",
       },
-            {
+      {
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/BU510-1.jpeg",
       },
@@ -1170,11 +1170,11 @@ export const products = [
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/bu516-2.jpeg",
       },
-            {
+      {
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/bu516-3.jpeg",
       },
-            {
+      {
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/bu516-4.jpeg",
       },
@@ -1207,7 +1207,7 @@ export const products = [
         alt: "جهاز ضغط بيرور",
         src: "./images/products/inhalation/inhalation-2.jpeg",
       },
-            {
+      {
         alt: "جهاز ضغط بيرور",
         src: "./images/products/inhalation/inhalation-3.jpeg",
       },
@@ -1240,7 +1240,7 @@ export const products = [
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/bu565-2.jpeg",
       },
-            {
+      {
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/bu565-3.jpeg",
       },
@@ -1273,7 +1273,7 @@ export const products = [
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/bu512-2.jpeg",
       },
-            {
+      {
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/bu512-3.jpeg",
       },
@@ -1295,7 +1295,7 @@ export const products = [
     name: "جهاز ضغط ميدسانا BU582",
     category: "monitoring",
     price: 2800,
-    images: [  
+    images: [
       {
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/bu582-1.jpeg",
@@ -1304,7 +1304,7 @@ export const products = [
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/bu582-2.jpeg",
       },
-            {
+      {
         alt: "جهاز ضغط بيرور",
         src: "./images/products/pressure/bu582-3.jpeg",
       },
