@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -13,8 +13,21 @@ import ContactPage       from './pages/ContactPage';
 
 export default function App() {
   const [cartOpen,  setCartOpen]  = useState(false);
-  const [cartItems, setCartItems] = useState([]);
-  const [favorites, setFavorites] = useState([]);
+const [cartItems, setCartItems] = useState(() => {
+  const savedCart = localStorage.getItem('cartItems');
+  return savedCart ? JSON.parse(savedCart) : [];
+});
+const [favorites, setFavorites] = useState(() => {
+  const savedFavs = localStorage.getItem('favorites');
+  return savedFavs ? JSON.parse(savedFavs) : [];
+});
+  useEffect(() => {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  }, [cartItems]);
+
+  useEffect(() => {
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }, [favorites]);
 
   /* Cart */
   const addToCart = (product) =>
@@ -25,7 +38,10 @@ export default function App() {
     });
 
   const removeFromCart = (id) => setCartItems(prev => prev.filter(i => i.id !== id));
-
+const clearCart = () => {
+  setCartItems([]);
+  localStorage.removeItem("cartItems");
+};
   const updateQty = (id, qty) => {
     if (qty <= 0) { removeFromCart(id); return; }
     setCartItems(prev => prev.map(i => i.id === id ? { ...i, qty } : i));
@@ -70,6 +86,7 @@ export default function App() {
           onClose={() => setCartOpen(false)}
           onRemove={removeFromCart}
           onQty={updateQty}
+          onClear={clearCart}
         />
       )}
     </>
